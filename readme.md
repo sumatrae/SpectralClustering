@@ -14,4 +14,4 @@ sudo chmod u+x run.sh
 Spectral clustering on the left, and ordinary Kmeans on the right.
 
 <center>
-<img src="https://github.com/SongDark/SpectralClustering/blob/master/figures/spectral_clustering.png?raw=true" width="80%">
+<img src="https://github.com/sumatrae/SpectralClustering/blob/master/spectral_clustering.png?raw=true" width="80%">
