@@ -92,11 +92,11 @@ if __name__ == "__main__":
         plt.subplot(122)
         plt.scatter(X[:, 0], X[:, 1], s=10, color=colors[y_km])
         plt.title("Kmeans Clustering")
-        plt.show()
+        # plt.show()
         plt.savefig("spectral_clustering.png")
 
 
     data, label = make_circles(n_samples=500)
-    sc = SpectralClustering(n_clusters=2).fit(data)
+    sc = SpectralClustering(n_clusters=2, gamma = 60).fit(data)
     pure_kmeans = KMeans(n_clusters=2).fit(data)
     plot(data, sc.labels_, pure_kmeans.labels_)
